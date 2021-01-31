@@ -1,0 +1,57 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+  <title>Admin login</title>
+</head>
+<style>
+body{
+  background: #2d2d2d;
+
+  line-height:1.6;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding:1em;
+}
+</style>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Welcome</a>
+    <div>
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Back</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="jumbotron mt-5">
+      <h1>Admin Log In</h1>
+      <p>Enter your username and password</p>
+   
+    <form action="admin_login.php" method="post">
+      <div class="form-group">
+        <label for="usermail"><b>Username</b></label>
+        <input type="text"  name="uname" id="usermail" class="form-control" placeholder="Enter your username" required>
+      </div>
+      <div class="form-group">
+        <label for="password"><b>Password</b></label>
+        <input type="password"  name="psw" id="password" class="form-control" placeholder="Enter your password" required>
+      </div>
+    </div>
+      <button type="submit" class="btn btn-success" style="color:white;">Login</button>
+    </form>
+  </div>
+</body>
+
+</html>
+
+
+
